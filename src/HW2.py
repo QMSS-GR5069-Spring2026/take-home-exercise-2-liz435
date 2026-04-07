@@ -181,7 +181,7 @@ display(yearly_avg.head(5))
 # 2020-2024, since the time is significantly longer than the other years.
 # 2021 is the slowest avg pit stop for all drivers
 
-# investigate 2021
+# investigate 2021 to find out what happened
 pit_2021 = pit_by_year.filter(col("race_year") == 2021)
 display(pit_2021.orderBy("race_date", "avg_pit_time").head(5))
 
